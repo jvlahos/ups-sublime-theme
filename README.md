@@ -1,168 +1,194 @@
+# TmTheme Editor Variables
+http://tmtheme-editor.herokuapp.com/
 
-# Comment (self explanatory)
+**STRING**
+*In SCSS*
+* @import *"partials/base"*;
+* @include svg(*"gear_white"*);
 
-# String
-SCSS
-@import *"partials/base"*;
-@include svg(*"gear_white"*);
-
-HTML
+*In HTML*
 class=*"analytics-body"*
 role=*"main"*
 
-JS
+*In JS*
 $(*'.analytics-body'*).addClass(*'loading'*);
 if (!target.hasClass(*'tip-trigger'*)) {
 
-# Number
-SCSS
+-------
+
+**NUMBER**
+*In SCSS*
 width: *32.5*%;
 border: *1*px solid $black-25;
 
-HTML
---
-
-JS
+*In JS*
 if (windowWidth > *960*) {
 tooltip.css('z-index', *1500*);
 
-# Built-in Constant
-SCSS
---
-HTML
---
+-------
 
-JS
+**BUILT-IN CONSTANT**
+*In JS*
 *true*, *false*
 
-# User-defined constant
-HTML
+-------
+
+**USER-DEFINED CONSTANT**
+*In HTML*
 *&copy;*
 *&nbsp;*
 
-SCSS
+*In SCSS*
 *px*, *%*
 
-JS
---
+-------
 
-# Variable
-JS
-$(*this*)…
+**VARIABLE**
+*In JS*
+$(*this*)
 
-# Keyword
-SCSS
+-------
+
+**KEYWORD**
+*In SCSS*
 .ie7 *&*
 *@mixin body-padding*($top: 0px, $bottom:0px)
 *@include no-trans;*
 *h4*, *button*
 
-JS
+*In JS*
 *if*(tooltip *&&* tooltip.length *>* 0)
 *$*('.loading-overlay').hide();
 modalOpen *=* false;
 *return* layout;
 
-# Storage
+-------
+
+**STORAGE**
 No finding
 
-# Storage type
-JS
+-------
+
+**STORAGE TYPE**
+*In JS*
 *function*(block)
 *var* contents;
 *function*(){
 
-# Class Name
+-------
+
+**CLASS NAME**
 No finding
 
-# Inherited class name
+-------
+
+**INHERITED STORAGE TYPE**
 No finding
 
-# Function name
-JS
+-------
+
+**FUNCTION NAME**
+*In JS*
 layout.*initModal* = function(id) {
 function *equalizeBedHeights*(){
 layout.*init_listeners* = function() {
 
-# Function argument
-JS
+-------
+
+**FUNCTION ARGUMENT**
+*In JS*
 layout.init = function(*app, callback*)
 layout.init_modal_listener = function(*context*) {
 layout.initModal = function(*id*) {
 
-# Tag name
-HTML
+-------
+
+**TAG NAME**
+*In HTML*
 <*body*></*body*>
 <*div*></*div*>
 
+-------
 
-# Tag attribute
-HTML
+**TAG ATTRIBUTE**
+*In HTML*
 <meta *charset*="utf-8">
 <link *rel*="stylesheet" *type*="text/css"…
 <div *class*="ftr-logo"></div>
 
-SCSS
+*In SCSS*
 *.loading-overlay* {
 @extend *.text*;
 *.panel* > *.panel-grid-3* {
 
+-------
 
-# Library function
+**LIBRARY FUNCTION**
+*In JS*
 modal.*remove*();
 $(document).*find*('ul, dl')
 
-# Library constant
-JS
+-------
+
+**LIBRARY CONSTANT**
+*In JS*
 var section = $(this).*parent*();
 var len = panels.*length*;
 tooltip.*width*()
 
-SCSS
+*In SCSS*
 cursor: *pointer*;
 display: *none*;
 margin: 0 *auto*;
 position: *relative*;
 
-# Library class/type
-SCSS
+-------
+
+**LIBRARY CLASS/TYPE**
+*In SCSS*
 *text-align*: center;
 *padding*: 0px;
 *vertical-align*: middle;
 
-JS
+*In JS*
 *layout*.initModal = function(id) {
 $(*window*)
 
-# Library variable
+-------
+
+**LIBRARY VARIABLE**
 No findings
 
-# JSON String
-JSON
+-------
+
+**JSON STRING**
+*In JSON*
 *"defaults"*: {
 			*"filterable"*: true,
 			*"editable"*: true
 }
 
+-------
 
-# Foreground
+**FOREGROUND**
 Line numbers
 
-HTML
+*In HTML*
 *<* title *>* *RGI | Healthcare Analytics Solution*
 *<!DOCTYPE html>*
 
-SCSS
+*In SCSS*
 .bar *{* 
 		margin*:* auto*;*
 		width*:* 100%*;*
 	*}*
 
-JS
-(has impact but skipped)
+*In JS*
+[?]
 
+-------
 
-# Caret
+**CARET**
 The blinking cursor
 
 
