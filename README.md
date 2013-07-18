@@ -1,195 +1,198 @@
 # TmTheme Editor Variables
-http://tmtheme-editor.herokuapp.com/
+Work in progress.
+Made, and able to be edited, using http://tmtheme-editor.herokuapp.com/. Shown below is a reference list of variables in the theme editor and where their rules apply in `HTML`, `SCSS`, and `JS` files. Text affected is either wrapped in "*"s or properly italicized.
 
-**STRING**
-*In SCSS*
+![Screenshot](/screenshot.png)
+
+#### String
+`.SCSS`
 * @import *"partials/base"*;
 * @include svg(*"gear_white"*);
 
-*In HTML*
-class=*"analytics-body"*
-role=*"main"*
+`.HTML`
+* class=*"analytics-body"*
+* role=*"main"*
 
-*In JS*
-$(*'.analytics-body'*).addClass(*'loading'*);
-if (!target.hasClass(*'tip-trigger'*)) {
-
--------
-
-**NUMBER**
-*In SCSS*
-width: *32.5*%;
-border: *1*px solid $black-25;
-
-*In JS*
-if (windowWidth > *960*) {
-tooltip.css('z-index', *1500*);
+`.JS`
+* $(*'.analytics-body'*).addClass(*'loading'*);
+* if (!target.hasClass(*'tip-trigger'*)) {
 
 -------
 
-**BUILT-IN CONSTANT**
-*In JS*
-*true*, *false*
+#### Number
+`.SCSS`
+* width: *32.5*%;
+* border: *1*px solid $black-25;
+
+`.JS`
+* if (windowWidth > *960*) {
+* tooltip.css('z-index', *1500*);
 
 -------
 
-**USER-DEFINED CONSTANT**
-*In HTML*
-*&copy;*
-*&nbsp;*
-
-*In SCSS*
-*px*, *%*
+#### Built-in Constant
+`.JS`
+* *true*, *false*
 
 -------
 
-**VARIABLE**
-*In JS*
-$(*this*)
+#### User-defined Constant
+`.HTML`
+* *&copy*
+* *&nbsp*
+
+`.SCSS`
+* *px*, *%*
 
 -------
 
-**KEYWORD**
-*In SCSS*
-.ie7 *&*
-*@mixin body-padding*($top: 0px, $bottom:0px)
-*@include no-trans;*
-*h4*, *button*
-
-*In JS*
-*if*(tooltip *&&* tooltip.length *>* 0)
-*$*('.loading-overlay').hide();
-modalOpen *=* false;
-*return* layout;
+#### Variable
+`.JS`
+* $(*this*)
 
 -------
 
-**STORAGE**
+#### Keyword
+`.SCSS`
+* .ie7 *&*
+* *@mixin body-padding*($top: 0px, $bottom:0px)
+* *@include no-trans;*
+* *h4*, *button*
+
+`.JS`
+* *if*(tooltip *&&* tooltip.length *>* 0)
+* *$*('.loading-overlay').hide();
+* modalOpen *=* false;
+* *return* layout;
+
+-------
+
+#### Storage
 No finding
 
 -------
 
-**STORAGE TYPE**
-*In JS*
-*function*(block)
-*var* contents;
-*function*(){
+#### Storage Type
+`.JS`
+* *function*(block)
+* *var* contents;
+* *function*(){
 
 -------
 
-**CLASS NAME**
+#### Class Name
 No finding
 
 -------
 
-**INHERITED STORAGE TYPE**
+#### Inherited Storage Type
 No finding
 
 -------
 
-**FUNCTION NAME**
-*In JS*
-layout.*initModal* = function(id) {
-function *equalizeBedHeights*(){
-layout.*init_listeners* = function() {
+#### Function name
+`.JS`
+* layout.*initModal* = function(id) {
+* function *equalizeBedHeights*(){
+* layout.*init_listeners* = function() {
 
 -------
 
-**FUNCTION ARGUMENT**
-*In JS*
-layout.init = function(*app, callback*)
-layout.init_modal_listener = function(*context*) {
-layout.initModal = function(*id*) {
+#### Function Argument
+`.JS`
+* layout.init = function(*app, callback*)
+* layout.init_modal_listener = function(*context*) {
+* layout.initModal = function(*id*) {
 
 -------
 
-**TAG NAME**
+#### Tag Name
+`.HTML`
+* <*body*></*body*>
+* <*div*></*div*>
+
+-------
+
+#### Tag Attribute
 *In HTML*
-<*body*></*body*>
-<*div*></*div*>
+* <meta *charset*="utf-8">
+* <link *rel*="stylesheet" *type*="text/css"…
+* <div *class*="ftr-logo"></div>
+
+`.SCSS`
+* *.loading-overlay* {
+* @extend *.text*;
+* *.panel* > *.panel-grid-3* {
 
 -------
 
-**TAG ATTRIBUTE**
-*In HTML*
-<meta *charset*="utf-8">
-<link *rel*="stylesheet" *type*="text/css"…
-<div *class*="ftr-logo"></div>
-
-*In SCSS*
-*.loading-overlay* {
-@extend *.text*;
-*.panel* > *.panel-grid-3* {
+#### Library Function
+`.JS`
+* modal.*remove*();
+* $(document).*find*('ul, dl')
 
 -------
 
-**LIBRARY FUNCTION**
-*In JS*
-modal.*remove*();
-$(document).*find*('ul, dl')
+#### Library Constant
+`.JS`
+* var section = $(this).*parent*();
+* var len = panels.*length*;
+* tooltip.*width*()
+
+`.SCSS`
+* cursor: *pointer*;
+* display: *none*;
+* margin: 0 *auto*;
+* position: *relative*;
 
 -------
 
-**LIBRARY CONSTANT**
-*In JS*
-var section = $(this).*parent*();
-var len = panels.*length*;
-tooltip.*width*()
-
-*In SCSS*
-cursor: *pointer*;
-display: *none*;
-margin: 0 *auto*;
-position: *relative*;
-
--------
-
-**LIBRARY CLASS/TYPE**
-*In SCSS*
-*text-align*: center;
-*padding*: 0px;
-*vertical-align*: middle;
+#### Library Class Type
+`.SCSS`
+* *text-align*: center;
+* *padding*: 0px;
+* *vertical-align*: middle;
 
 *In JS*
-*layout*.initModal = function(id) {
-$(*window*)
+* *layout*.initModal = function(id) {
+* $(*window*)
 
 -------
 
-**LIBRARY VARIABLE**
+#### Library Variable
 No findings
 
 -------
 
-**JSON STRING**
-*In JSON*
-*"defaults"*: {
+#### JSON String
+`.JSON`
+* *"defaults"*: {
 			*"filterable"*: true,
 			*"editable"*: true
 }
 
 -------
 
-**FOREGROUND**
+#### Foreground
 Line numbers
 
-*In HTML*
-*<* title *>* *RGI | Healthcare Analytics Solution*
-*<!DOCTYPE html>*
+`.HTML`
+* *<* title *>* *RGI | Healthcare Analytics Solution*
+* *<!DOCTYPE html>*
 
-*In SCSS*
-.bar *{* 
+`.SCSS`
+* .bar *{* 
 		margin*:* auto*;*
 		width*:* 100%*;*
 	*}*
 
-*In JS*
+`.JS`
 [?]
 
 -------
 
-**CARET**
-The blinking cursor
+#### Caret
+* The blinking cursor
 
 
 
