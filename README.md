@@ -1,6 +1,11 @@
 # TmTheme Editor Variables
-Work in progress.
+
 Made, and able to be edited, using http://tmtheme-editor.herokuapp.com/. Shown below is a reference list of variables in the theme editor and where their rules apply in `HTML`, `SCSS`, and `JS` files. Text affected is either wrapped in "*"s or properly italicized.
+
+The goals of this were to:
+* Learn how theming works (to a limited extent... I used an editor)
+* Use some Upstatement colors and styles
+* Attempt some subtle but helpful styles to make code more scannable in a monochromatic scheme &mdash; calling out the most important elements and setting back the least.
 
 ![Screenshot](/screenshot.png)
 
